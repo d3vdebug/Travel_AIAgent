@@ -92,11 +92,22 @@ cp .env.example .env.local
 # - MURF_API_KEY (for Falcon TTS)
 # - GOOGLE_API_KEY (for Gemini LLM)
 # - DEEPGRAM_API_KEY (for Deepgram STT)
+# - MONGODB_URI
+# - MONGODB_DB_NAME
+# - MONGODB_COLLECTION
 # - SMTP_EMAIL (for booking confirmations)
 # - SMTP_PASSWORD (for booking confirmations)
 
 # Download required models
 uv run python src/agent.py download-files
+```
+
+For MongoDB Atlas Cloud Setup:
+
+```bash
+cd backend
+npm install mongodb
+
 ```
 
 For LiveKit Cloud users, you can automatically populate credentials:
