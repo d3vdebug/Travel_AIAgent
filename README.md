@@ -1,18 +1,15 @@
-# AI Voice Agents Challenge - Starter Repository
+# Sacred Trails India - Travel Booking Agent
 
-Welcome to the **AI Voice Agents Challenge** by [murf.ai](https://murf.ai)!
+> [!IMPORTANT]
+> _This project was developed for the Murf AI Voice Agent Hackathon at TechFest IIT Bombay.
+It is built on top of Murf AI’s official demo repository, which was cloned and used solely for initial setup and environment configuration.
+All core features, integrations, and customizations — including the design and implementation of the Sacred Trails India AI Voice Agent travel booking system — were independently developed during the hackathon.
+I hereby declare that this submission represents my original work, created within the hackathon timeline, while appropriately leveraging the provided demo resources._
 
-## About the Challenge
+## About the Agent
+Sacred Trails India' is an AI Voice Agent powered travel booking system that revolutionizes travel planning and booking for destinations across India.
 
-We just launched **Murf Falcon** – the consistently fastest TTS API, and you're going to be among the first to test it out in ways never thought before!
 
-**Build 10 AI Voice Agents over the course of 10 Days** along with help from our devs and the community champs, and win rewards!
-
-### How It Works
-
-- One task to be provided everyday along with a GitHub repo for reference
-- Build a voice agent with specific personas and skills
-- Post on GitHub and share with the world on LinkedIn!
 
 ## Repository Structure
 
@@ -71,8 +68,8 @@ Make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd falcon-tdova-nov25-livekit
+git clone https://github.com/d3vdebug/Travel_AIAgent.git
+
 ```
 
 ### 2. Backend Setup
@@ -93,6 +90,8 @@ cp .env.example .env.local
 # - MURF_API_KEY (for Falcon TTS)
 # - GOOGLE_API_KEY (for Gemini LLM)
 # - DEEPGRAM_API_KEY (for Deepgram STT)
+# - SMTP_EMAIL (for booking confirmations)
+# - SMTP_PASSWORD (for booking confirmations)
 
 # Download required models
 uv run python src/agent.py download-files
@@ -103,6 +102,7 @@ For LiveKit Cloud users, you can automatically populate credentials:
 ```bash
 lk cloud auth
 lk app env -w -d .env.local
+
 ```
 
 ### 3. Frontend Setup
@@ -160,17 +160,6 @@ pnpm dev
 
 Then open http://localhost:3000 in your browser!
 
-## Daily Challenge Tasks
-
-Each day, you'll receive a new task that builds upon your voice agent. The tasks will help you:
-
-- Implement different personas and conversation styles
-- Add custom tools and capabilities
-- Integrate with external APIs
-- Build domain-specific agents (customer service, tutoring, etc.)
-- Optimize performance and user experience
-
-**Stay tuned for daily task announcements!**
 
 ## Documentation & Resources
 
@@ -190,25 +179,24 @@ uv run pytest
 
 Learn more about testing voice agents in the [LiveKit testing documentation](https://docs.livekit.io/agents/build/testing/).
 
-## Contributing & Community
+# How to Use Sacred Trails India
+## Sample Conversation Flow
+1. Greeting: The AI agent introduces itself as "Nikhil" from Sacred Trails India
+2. Destination Selection: "I want to plan a trip to Goa"
+3. Travel Details: Provide dates, number of travelers, origin city
+4. Preferences: Specify budget range and desired amenities
+5. Travel Mode: Choose from available transport options with cost calculations
+6. Hotel Selection: Review and select from AI-recommended hotels
+7. Contact Details: Provide name, mobile number, and email
+8. Booking Confirmation: Receive booking ID and email confirmation
 
-This is a challenge repository, but we encourage collaboration and knowledge sharing!
-
-- Share your solutions and learnings on GitHub
-- Post about your progress on LinkedIn
-- Join the [LiveKit Community Slack](https://livekit.io/join-slack)
-- Connect with other challenge participants
+## Example Commands
+- "I want to travel to Mumbai from Delhi"
+- "My budget is medium, and I prefer hotels with Wi-Fi and breakfast"
+- "Show me travel options to Goa"
+- "What's my booking status for booking ID ABC12345?"
+- "Cancel my booking ABC12345"
 
 ## License
 
 This project is based on MIT-licensed templates from LiveKit and includes integration with Murf Falcon. See individual LICENSE files in backend and frontend directories for details.
-
-## Have Fun!
-
-Remember, the goal is to learn, experiment, and build amazing voice AI agents. Don't hesitate to be creative and push the boundaries of what's possible with Murf Falcon and LiveKit!
-
-Good luck with the challenge!
-
----
-
-Built for the AI Voice Agents Challenge by murf.ai
