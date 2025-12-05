@@ -1,5 +1,7 @@
 # Sacred Trails India - Travel Booking Agent
 
+# [Demo Video (Linkedin)](https://www.linkedin.com/feed/update/urn:li:ugcPost:7402762913830264832)
+
 > [!IMPORTANT]
 > _This project was developed for the Murf AI Voice Agent Hackathon at TechFest IIT Bombay.
 It is built on top of Murf AI’s official demo repository, which was cloned and used solely for initial setup and environment configuration.
