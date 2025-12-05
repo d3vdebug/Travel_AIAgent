@@ -16,7 +16,7 @@ I hereby declare that this submission represents my original work, created withi
 This is a **monorepo** that contains both the backend and frontend for building voice agent applications. It's designed to be your starting point for each day's challenge task.
 
 ```
-falcon-tdova-nov25-livekit/
+Travel_Booking_Agent/
 ├── backend/          # LiveKit Agents backend with Murf Falcon TTS
 ├── frontend/         # React/Next.js frontend for voice interaction
 ├── start_app.sh      # Convenience script to start all services
