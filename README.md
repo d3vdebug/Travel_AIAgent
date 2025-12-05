@@ -7,7 +7,7 @@ All core features, integrations, and customizations — including the design and
 I hereby declare that this submission represents my original work, created within the hackathon timeline, while appropriately leveraging the provided demo resources._
 
 ## About the Agent
-Sacred Trails India' is an AI Voice Agent powered travel booking system that revolutionizes travel planning and booking for destinations across India.
+'Sacred Trails India' is an AI Voice Agent powered travel booking system that revolutionizes travel planning and booking for destinations across India.
 
 
 
